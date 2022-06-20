@@ -1,0 +1,34 @@
+---
+{
+    "urlFormat": "index.html"
+}
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{>head }}
+        <title>Home Page</title>
+        <link rel="shortcut icon" type="image/jpg" href="/images/yext-favicon.png"/>
+    </head>
+    <body>  
+			<div class="w-full">
+                {{>nav}}
+                {{>hero-image-banner}}
+
+                <div class="centered-container">
+                    <div class="section">
+                        <div id="root">				
+						</div>
+                    </div>
+                </div>
+				
+                <div class="w-full bg-gray-100">
+                    <div class="centered-container">
+                        {{>footer}}
+                    </div>
+                </div>
+            </div>
+            {{>analytics}}
+    </body> 
+
+</html>

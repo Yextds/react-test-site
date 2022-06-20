@@ -1,0 +1,9 @@
+/.artifact-output
+/assets
+/public
+/localData
+/node_modules
+/sites-rendered-output
+cli
+cli.exe
+/.idea

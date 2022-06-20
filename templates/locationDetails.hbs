@@ -1,0 +1,48 @@
+---
+{
+    "stream": {
+        "$id": "Locations",
+        "source": "knowledgeGraph",
+        "destination": "pages",
+      "filter": {
+        "entityTypes": [
+          "location"
+        ]
+      },
+      "fields": [
+        "id",
+        "name",
+        "slug",
+        "address",
+        "mainPhone",
+        "featuredMessage",
+        "emails",
+        "menuUrl",
+        "websiteUrl",
+        "hours",
+        "photoGallery",
+        "c_relatedFAQs.question",
+        "c_relatedFAQs.answer"
+      ],
+      "localization": {
+          "locales": ["en"]
+      }
+    },
+    "urlFormat": "location/{{slug}}.html"
+}
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{{name}}</title>
+        <meta name="description" content="{{featuredMessage}}">
+        {{>head}}
+    </head>
+    <body class="bg-white text-gray-600 font-Poppins leading-normal text-base tracking-normal">      
+        
+        {{>footer}}
+    </body>
+</html>
