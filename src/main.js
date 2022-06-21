@@ -58,8 +58,8 @@ class LocationsList extends React.Component {
 			"&v=" +
 			vparam +
 			"&limit=" +
-			limit + 			
-			"&entityTypes=" +
+			limit + 
+			"&savedFilterIds=916221098&entityTypes=" +
 			entityTypes ;
 					
 			fetch(fullURL).then(response => response.json()).then(result => {
@@ -81,7 +81,7 @@ class LocationsList extends React.Component {
   render() {
     const locations = this.state.locations.map((item, i) => (
       <div>
-        <h1>{ item.name }</h1>
+        <h1>{item.name}</h1>
         <span>{ item.address.line1 }, { item.address.city }, { item.address.region } - { item.address.postalCode }</span>
       </div>	  
     ));
